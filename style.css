@@ -16,17 +16,130 @@ header h1 {
   font-size: 3rem;
 }
 
-.video-container {
-  height: 500px;
+.container {
+  height: 400px;
   border-radius: 35px;
   background-color: rgba(85, 107, 47, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1rem;
+}
+
+.start-btn button {
+  width: 300px;
+  height: 100px;
+  background-color: wheat;
+  margin: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2rem;
+}
+
+.start-btn button:hover {
+  background-color: blanchedalmond;
+  cursor: pointer;
 }
 
 .video {
   width: 100%;
   height: auto;
+  display: none;
+}
+
+.option-btns {
+  margin-top: 2rem;
+  display: none;
+}
+
+.option-btns button {
+  width: 150px;
+  height: 50px;
+  background-color: wheat;
+  margin: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: auto;
+}
+
+.option-btns button:hover {
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
+  header {
+    display: none;
+  }
+
+  .container {
+    height: 300px;
+    width: 90%;
+  }
+  .video {
+    width: 50%;
+    margin: auto;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .container {
+    width: 75%;
+    height: 500px;
+  }
+
+  .start-btn button {
+    width: 500px;
+    height: 200px;
+    font-size: 3rem;
+  }
+
+  .video {
+    width: 50%;
+    margin: auto;
+  }
+
+  .option-btns button {
+    width: 200px;
+    height: 75px;
+    margin: 0 2rem;
+    font-family: "Balsamiq Sans", cursive;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .option-btns button {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    height: 600px;
+  }
+
+  .option-btns button {
+    width: 300px;
+  }
 }
