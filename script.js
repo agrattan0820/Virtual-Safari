@@ -9,7 +9,6 @@ const footerElement = document.querySelector("footer");
 
 let state = 0;
 
-<<<<<<< HEAD
 videoElement.addEventListener("ended", function () {
   switch (state) {
     case 0:
@@ -57,7 +56,7 @@ videoElement.addEventListener("ended", function () {
       break;
   }
 });
-=======
+
 videoElement.onended = (event) => {
   if (state == 1) {
     showVideo(3);
@@ -82,7 +81,6 @@ videoElement.onended = (event) => {
     closeFullscreen();
   }
 };
->>>>>>> 876c54adb22771798ba6827a418083638641d018
 
 startBtn.addEventListener("click", function () {
   startBtn.style.display = "none";

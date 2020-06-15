@@ -39,14 +39,11 @@ header h1 {
   font-size: 2rem;
 }
 
-<<<<<<< HEAD
 .start-btn button:hover {
   background-color: blanchedalmond;
   cursor: pointer;
 }
 
-=======
->>>>>>> 876c54adb22771798ba6827a418083638641d018
 .video {
   width: 100%;
   height: auto;
@@ -59,11 +56,7 @@ header h1 {
 }
 
 .option-btns button {
-<<<<<<< HEAD
   width: 150px;
-=======
-  width: 100px;
->>>>>>> 876c54adb22771798ba6827a418083638641d018
   height: 50px;
   background-color: wheat;
   margin: 0 1rem;
@@ -71,19 +64,12 @@ header h1 {
   border: none;
   border-radius: 10px;
   font-family: "Balsamiq Sans", cursive;
-<<<<<<< HEAD
   font-size: auto;
-=======
-  font-size: 1.5rem;
->>>>>>> 876c54adb22771798ba6827a418083638641d018
 }
 
 .option-btns button:hover {
   background-color: blanchedalmond;
-<<<<<<< HEAD
   cursor: pointer;
-=======
->>>>>>> 876c54adb22771798ba6827a418083638641d018
 }
 
 footer {
@@ -138,11 +124,7 @@ footer {
     height: 75px;
     margin: 0 2rem;
     font-family: "Balsamiq Sans", cursive;
-<<<<<<< HEAD
     font-size: 1.5rem;
-=======
-    font-size: 2rem;
->>>>>>> 876c54adb22771798ba6827a418083638641d018
   }
 }
 
