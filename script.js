@@ -9,6 +9,7 @@ const footerElement = document.querySelector("footer");
 
 let state = 0;
 
+<<<<<<< HEAD
 videoElement.addEventListener("ended", function () {
   switch (state) {
     case 0:
@@ -56,6 +57,32 @@ videoElement.addEventListener("ended", function () {
       break;
   }
 });
+=======
+videoElement.onended = (event) => {
+  if (state == 1) {
+    showVideo(3);
+    openFullscreen();
+    state++;
+  } else if (state == 3) {
+    showVideo(6);
+    openFullscreen();
+    state++;
+  } else if (state == 5) {
+    showVideo(9);
+    openFullscreen();
+    state++;
+  } else if (state == 6) {
+    videoElement.style.display = "none";
+    startBtn.innerHTML = "Journey Again?";
+    startBtn.style.display = "block";
+    footerElement.style.display = "block";
+    closeFullscreen();
+  } else {
+    optionBtnsElement.style.display = "block";
+    closeFullscreen();
+  }
+};
+>>>>>>> 876c54adb22771798ba6827a418083638641d018
 
 startBtn.addEventListener("click", function () {
   startBtn.style.display = "none";
