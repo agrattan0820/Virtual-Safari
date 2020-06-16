@@ -57,31 +57,6 @@ videoElement.addEventListener("ended", function () {
   }
 });
 
-videoElement.onended = (event) => {
-  if (state == 1) {
-    showVideo(3);
-    openFullscreen();
-    state++;
-  } else if (state == 3) {
-    showVideo(6);
-    openFullscreen();
-    state++;
-  } else if (state == 5) {
-    showVideo(9);
-    openFullscreen();
-    state++;
-  } else if (state == 6) {
-    videoElement.style.display = "none";
-    startBtn.innerHTML = "Journey Again?";
-    startBtn.style.display = "block";
-    footerElement.style.display = "block";
-    closeFullscreen();
-  } else {
-    optionBtnsElement.style.display = "block";
-    closeFullscreen();
-  }
-};
-
 startBtn.addEventListener("click", function () {
   startBtn.style.display = "none";
   videoElement.setAttributeNode(autoAtt);

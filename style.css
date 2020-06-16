@@ -24,13 +24,13 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .start-btn button {
   width: 300px;
   height: 100px;
-  background-color: wheat;
+  background-color: sandybrown;
   margin: 0 1rem;
   outline: none;
   border: none;
@@ -40,7 +40,7 @@ header h1 {
 }
 
 .start-btn button:hover {
-  background-color: blanchedalmond;
+  background-color: wheat;
   cursor: pointer;
 }
 
@@ -48,27 +48,30 @@ header h1 {
   width: 100%;
   height: auto;
   display: none;
+  margin: auto;
 }
 
 .option-btns {
-  margin-top: 2rem;
+  text-align: center;
+  margin-top: 1rem;
   display: none;
+  flex-wrap: wrap;
 }
 
 .option-btns button {
-  width: 150px;
+  width: 125px;
   height: 50px;
-  background-color: wheat;
-  margin: 0 1rem;
+  background-color: sandybrown;
+  margin: 1rem 0.5rem;
   outline: none;
   border: none;
   border-radius: 10px;
   font-family: "Balsamiq Sans", cursive;
-  font-size: auto;
+  font-size: 0.9rem;
 }
 
 .option-btns button:hover {
-  background-color: blanchedalmond;
+  background-color: wheat;
   cursor: pointer;
 }
 
@@ -77,6 +80,12 @@ footer {
   bottom: 0;
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media screen and (max-height: 600px) {
+  .container {
+    height: 300px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-height: 400px) {
@@ -90,11 +99,21 @@ footer {
   }
   .video {
     width: 50%;
-    margin: auto;
   }
 
   footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .video {
+    width: 75%;
+  }
+
+  .option-btns button {
+    width: 150px;
+    font-size: 1rem;
   }
 }
 
@@ -114,11 +133,6 @@ footer {
     font-size: 3rem;
   }
 
-  .video {
-    width: 50%;
-    margin: auto;
-  }
-
   .option-btns button {
     width: 200px;
     height: 75px;
@@ -136,10 +150,14 @@ footer {
 
 @media screen and (min-width: 1400px) {
   .container {
-    height: 600px;
+    height: 550px;
   }
 
   .option-btns button {
     width: 300px;
+  }
+
+  .video {
+    width: 60%;
   }
 }
