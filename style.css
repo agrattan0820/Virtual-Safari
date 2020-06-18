@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow-x: hidden;
   display: flex;
@@ -94,7 +94,7 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 @media screen and (max-height: 667px) {
@@ -129,6 +129,10 @@ footer {
     margin: 0 2rem;
     font-family: "Balsamiq Sans", cursive;
     font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
