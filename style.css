@@ -143,6 +143,7 @@ footer {
 
   .option-btns button {
     width: 200px;
+    height: 75px;
     font-size: 1.2rem;
   }
 
