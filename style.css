@@ -82,6 +82,7 @@ header h1 {
   border-radius: 10px;
   font-family: "Balsamiq Sans", cursive;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .option-btns button:hover {
