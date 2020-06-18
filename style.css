@@ -86,23 +86,9 @@ footer {
   .container {
     height: 300px;
   }
-}
 
-@media screen and (orientation: landscape) and (max-height: 400px) {
-  header {
-    display: none;
-  }
-
-  .container {
-    height: 300px;
-    width: 90%;
-  }
-  .video {
-    width: 50%;
-  }
-
-  footer {
-    display: none;
+  .option-btns button {
+    width: 100px;
   }
 }
 
@@ -139,6 +125,29 @@ footer {
     margin: 0 2rem;
     font-family: "Balsamiq Sans", cursive;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px) {
+  header {
+    display: none;
+  }
+
+  .container {
+    height: 300px;
+    width: 90%;
+  }
+  .video {
+    width: 50%;
+  }
+
+  .option-btns button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    display: none;
   }
 }
 

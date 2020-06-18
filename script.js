@@ -156,16 +156,16 @@ function openFullscreen() {
 }
 
 function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) {
+  if (videoElement.exitFullscreen) {
+    videoElement.exitFullscreen();
+  } else if (videoElement.mozCancelFullScreen) {
     /* Firefox */
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) {
+    videoElement.mozCancelFullScreen();
+  } else if (videoElement.webkitExitFullscreen) {
     /* Chrome, Safari and Opera */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) {
+    videoElement.webkitExitFullscreen();
+  } else if (videoElement.msExitFullscreen) {
     /* IE/Edge */
-    document.msExitFullscreen();
+    videoElement.msExitFullscreen();
   }
 }
