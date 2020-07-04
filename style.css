@@ -9,8 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: sandybrown;
-  font-family: "Balsamiq Sans", cursive;
+  background-color: #f28123;
+  font-family: "Acme", sans-serif;
 }
 
 header {
@@ -32,7 +32,7 @@ header h1 {
   height: 400px;
   width: 85%;
   border-radius: 35px;
-  background-color: rgba(85, 107, 47, 0.8);
+  background-color: sandybrown;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,18 +43,19 @@ header h1 {
 .start-btn button {
   width: 300px;
   height: 100px;
-  background-color: sandybrown;
+  background-color: #d34e24;
   margin: 0 1rem;
   outline: none;
   border: none;
   border-radius: 10px;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Acme", sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  transition: ease-in-out 0.3s;
 }
 
 .start-btn button:hover {
-  background-color: wheat;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -83,10 +84,11 @@ header h1 {
   font-family: "Balsamiq Sans", cursive;
   font-size: 0.9rem;
   font-weight: bold;
+  transition: ease-in-out 0.3s;
 }
 
 .option-btns button:hover {
-  background-color: wheat;
+  opacity: 0.9;
   cursor: pointer;
 }
 
