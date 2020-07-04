@@ -14,8 +14,25 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+header::before {
+  position: absolute;
+  content: url(./Virtual_Safari_Leaf.svg);
+  top: -175px;
+  left: -300px;
+  transform: scale(0.5);
+}
+
+header::after {
+  position: absolute;
+  content: url(./Virtual_Safari_Leaf2.svg);
+  transform: scale(0.5) scaleX(-1);
+  top: -150px;
+  right: -300px;
 }
 
 header h2 {
@@ -29,6 +46,7 @@ header h1 {
 }
 
 .container {
+  position: relative;
   height: 400px;
   width: 85%;
   border-radius: 35px;
@@ -38,6 +56,10 @@ header h1 {
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .start-btn button {
@@ -76,7 +98,7 @@ header h1 {
 .option-btns button {
   width: 125px;
   height: 50px;
-  background-color: sandybrown;
+  background-color: #d34e24;
   margin: 1rem 0.5rem;
   outline: none;
   border: none;
@@ -115,7 +137,7 @@ footer {
   }
 
   .container {
-    width: 75%;
+    width: 50%;
     height: 500px;
   }
 
@@ -135,6 +157,17 @@ footer {
 
   footer {
     font-size: 0.8rem;
+  }
+
+  header::before {
+    transform: scale(0.7);
+    top: -75px;
+    left: -350px;
+  }
+  header::after {
+    transform: scale(0.7) scaleX(-1);
+    top: -50px;
+    right: -350px;
   }
 }
 
@@ -179,5 +212,16 @@ footer {
 
   .video {
     width: 60%;
+  }
+
+  header::before {
+    left: -400px;
+    top: -100px;
+    transform: scale(1);
+  }
+  header::after {
+    right: -400px;
+    top: -50px;
+    transform: scale(1) scaleX(-1);
   }
 }
