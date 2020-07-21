@@ -4,8 +4,7 @@ This project is a recreation of the Pumba and Timone Virtual Safari Jeep Tour, a
 **Link to live verison [here](https://virtualsafari.netlify.app/)**
 
 <p align="center">
-![Virtual_Safari_Snippet](https://user-images.githubusercontent.com/51346343/88115797-07ca2a80-cb85-11ea-8bb6-c6a460f1346a.png)
-
+<img src="https://user-images.githubusercontent.com/51346343/88115797-07ca2a80-cb85-11ea-8bb6-c6a460f1346a.png" alt="Virtual_Safari_Snippet">
 </p>
 
 ## How it Works
