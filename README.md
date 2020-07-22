@@ -16,6 +16,13 @@ All you have to do is to play along and have fun!
 Before completing the program, the only "playable" version was people's recordings of the game on YouTube.
 I wanted to bring this interactive experience which was near and dear to my heart into an online format where the ability to influence and play the game is possible.
 
+## Tools Used
+- HTML
+- CSS
+- JavaScript
+- Netlify
+- DaVinci Resolve (Video Editing)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
