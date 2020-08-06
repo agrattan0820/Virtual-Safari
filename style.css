@@ -17,6 +17,7 @@ header {
   position: relative;
   text-align: center;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 header::before {
@@ -24,15 +25,19 @@ header::before {
   content: url(./Virtual_Safari_Leaf.svg);
   top: -175px;
   left: -300px;
-  transform: scale(0.5);
+  --leftScale: 0.5;
+  transform: scale(var(--leftScale));
+  animation: leftRuffle 3s infinite alternate;
 }
 
 header::after {
   position: absolute;
   content: url(./Virtual_Safari_Leaf2.svg);
-  transform: scale(0.5) scaleX(-1);
+  --rightScale: 0.5;
+  transform: scale(var(--rightScale)) scaleX(-1);
   top: -150px;
   right: -300px;
+  animation: rightRuffle 3s infinite alternate;
 }
 
 header h2 {
@@ -127,6 +132,27 @@ footer a {
   margin: 0 1rem;
 }
 
+@keyframes leftRuffle {
+  50% {
+    transform: scale(var(--leftScale)) skew(5deg) rotate(-5deg);
+  }
+  100% {
+    transform: scale(var(--leftScale)) skew(0deg) rotate(0deg);
+  }
+}
+
+@keyframes rightRuffle {
+  0% {
+    transform: scale(var(--rightScale)) scalex(-1) skew(0deg) rotate(0deg);
+  }
+  50% {
+    transform: scale(var(--rightScale)) scalex(-1) skew(5deg) rotate(-5deg);
+  }
+  100% {
+    transform: scale(var(--rightScale)) scalex(-1) skew(0deg) rotate(0deg);
+  }
+}
+
 @media screen and (max-height: 667px) {
   .container {
     height: 250px;
@@ -166,12 +192,12 @@ footer a {
   }
 
   header::before {
-    transform: scale(0.7);
+    --leftScale: 0.7;
     top: -75px;
     left: -350px;
   }
   header::after {
-    transform: scale(0.7) scaleX(-1);
+    --rightScale: 0.7;
     top: -50px;
     right: -350px;
   }
@@ -223,11 +249,11 @@ footer a {
   header::before {
     left: -400px;
     top: -100px;
-    transform: scale(1);
+    --leftScale: 1;
   }
   header::after {
     right: -400px;
     top: -50px;
-    transform: scale(1) scaleX(-1);
+    --rightScale: 1;
   }
 }
