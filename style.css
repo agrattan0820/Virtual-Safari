@@ -91,7 +91,7 @@ header h1 {
   height: auto;
   display: none;
   margin: auto;
-  border-radius: 35px;
+  border-radius: 25px;
 }
 
 .video:focus {
@@ -113,7 +113,7 @@ header h1 {
   margin: 1rem 0.5rem;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   font-family: "Balsamiq Sans", cursive;
   font-size: 0.9rem;
   font-weight: bold;
