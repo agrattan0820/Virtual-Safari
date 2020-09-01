@@ -91,6 +91,12 @@ header h1 {
   height: auto;
   display: none;
   margin: auto;
+  border-radius: 35px;
+}
+
+.video:focus {
+  outline: none;
+  border: none;
 }
 
 .option-btns {
