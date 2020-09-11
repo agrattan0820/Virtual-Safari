@@ -50,9 +50,16 @@ header h1 {
   margin: 0;
 }
 
+.description-title {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
 .container {
   position: relative;
-  height: 400px;
+  height: 350px;
   width: 80%;
   border-radius: 35px;
   background-color: sandybrown;
@@ -67,11 +74,47 @@ header h1 {
     0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
+.mySlides {
+  display: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.mySlides img {
+  width: 200px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: green;
+}
+
+.dot-set {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+div.mySlides {
+  display: block;
+}
+
 .start-btn button {
   width: 300px;
   height: 100px;
   background-color: #d34e24;
-  margin: 0 1rem;
+  margin: 1rem;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -86,7 +129,53 @@ header h1 {
 }
 
 .start-btn button:hover {
-  opacity: 0.9;
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.back-btn button {
+  width: 200px;
+  height: 50px;
+  background-color: #d34e24;
+  margin: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "Acme", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.back-btn button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.how-to-play-btn button {
+  width: 150px;
+  height: 50px;
+  background-color: #f28123;
+  margin: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "Acme", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.how-to-play-btn button:hover {
+  filter: brightness(1.1);
   cursor: pointer;
 }
 
@@ -133,7 +222,7 @@ header h1 {
 }
 
 .option-btns button:hover {
-  opacity: 0.9;
+  filter: brightness(1.1);
   cursor: pointer;
 }
 
@@ -173,17 +262,38 @@ footer a {
 
 @media screen and (max-height: 667px) {
   .container {
-    height: 250px;
+    height: 260px;
+  }
+
+  .description-title {
+    font-size: 1.4rem;
   }
 
   .option-btns button {
     width: 100px;
+  }
+
+  .mySlides {
+    font-size: 1rem;
+  }
+
+  .mySlides img {
+    width: 40%;
+  }
+
+  .back-btn button {
+    width: 150px;
+    height: 35px;
   }
 }
 
 @media screen and (min-width: 769px) {
   header h1 {
     font-size: 6rem;
+  }
+
+  .description-title {
+    font-size: 2rem;
   }
 
   .container {
@@ -203,6 +313,14 @@ footer a {
     margin: 0 1rem;
     font-family: "Balsamiq Sans", cursive;
     font-size: 1rem;
+  }
+
+  .mySlides {
+    width: 75%;
+  }
+
+  .mySlides img {
+    width: 40%;
   }
 
   footer {
@@ -253,7 +371,16 @@ footer a {
 
 @media screen and (min-width: 1400px) {
   .container {
-    height: 550px;
+    height: 500px;
+  }
+
+  .description-title {
+    font-size: 3rem;
+  }
+
+  .mySlides {
+    font-size: 1.8rem;
+    line-height: 3rem;
   }
 
   .option-btns {

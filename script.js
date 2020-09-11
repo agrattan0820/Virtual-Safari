@@ -2,6 +2,7 @@ const headerElement = document.querySelector("header");
 const videoElement = document.querySelector("video");
 const optionBtnsElement = document.getElementById("options");
 const startBtn = document.getElementById("startBtn");
+const howToPlayBtn = document.getElementById("howToPlayBtn");
 const leftBtn = document.getElementById("leftBtn");
 const rightBtn = document.getElementById("rightBtn");
 const autoAtt = document.createAttribute("autoplay");
@@ -52,13 +53,14 @@ videoElement.addEventListener("ended", function () {
       closeFullscreen();
       break;
     default:
-      alert("How did you get here?");
+      alert("ERROR: How did you get here?");
       break;
   }
 });
 
 startBtn.addEventListener("click", function () {
   startBtn.style.display = "none";
+  howToPlayBtn.style.display = "none";
   videoElement.setAttributeNode(autoAtt);
   videoElement.style.display = "block";
   videoElement.src = "./Videos/Safari_Intro.mp4";
@@ -88,7 +90,7 @@ leftBtn.addEventListener("click", function () {
       state++;
       break;
     default:
-      alert("Now how did you get here?");
+      alert("ERROR: Now how did you get here?");
   }
 });
 
@@ -113,7 +115,7 @@ rightBtn.addEventListener("click", function () {
       state++;
       break;
     default:
-      alert("Now how did you get here?");
+      alert("ERROR: Now how did you get here?");
   }
 });
 
@@ -168,4 +170,33 @@ function closeFullscreen() {
     /* IE/Edge */
     videoElement.msExitFullscreen();
   }
+}
+
+// Description Slideshow Script
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
