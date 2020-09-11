@@ -49,6 +49,7 @@ videoElement.addEventListener("ended", function () {
       videoElement.style.display = "none";
       startBtn.innerHTML = "Journey Again?";
       startBtn.style.display = "block";
+      howToPlayBtn.style.display = "block";
       footerElement.style.display = "flex";
       closeFullscreen();
       break;
