@@ -161,9 +161,9 @@ function openFullscreen() {
 function closeFullscreen() {
   if (videoElement.exitFullscreen) {
     videoElement.exitFullscreen();
-  } else if (videoElement.mozCancelFullScreen) {
+  } else if (document.mozCancelFullScreen) {
     /* Firefox */
-    videoElement.mozCancelFullScreen();
+    document.mozCancelFullScreen();
   } else if (videoElement.webkitExitFullscreen) {
     /* Chrome, Safari and Opera */
     videoElement.webkitExitFullscreen();
