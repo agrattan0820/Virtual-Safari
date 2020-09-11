@@ -270,6 +270,10 @@ footer a {
     font-size: 1.4rem;
   }
 
+  .start-btn button {
+    width: 250px;
+  }
+
   .option-btns button {
     width: 100px;
   }
